@@ -3,12 +3,12 @@ import time
 
 start = time.time()
 a = 0
-for numbers in range(100000000):
+for numbers in range(20000):
     numbers = random.randint(6000000000,9999999999)
     strnum = str(numbers)
     a += 1
     print(a)
-    with open('10 crore.txt', 'a') as obj:    
+    with open('20k.csv', 'a') as obj:    
         obj.write(strnum)
         obj.write('\n')
 end = time.time()
