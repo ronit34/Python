@@ -62,12 +62,28 @@
 
 
 # []
-import re
-Input = input("Enter password : ")
-pattern = "^[0-9,a-z,A-Z]{6,}$"
-Pass = re.match(pattern , Input)
+# import re
+# Input = input("Enter password : ")
+# pattern = "^[0-9,a-z,A-Z]{6,}$"
+# Pass = re.match(pattern , Input)
 
-if Pass:
-    print("Validate")
-else:
-    print("Not valid password")
+# if Pass:
+#     print("Validate")
+# else:
+#     print("Not valid password")
+
+
+Input = input("Enter number : ")
+# Input = "10 30 21 09 90 10"
+SS = Input.split()
+L = []
+a = 1
+for i in SS:
+    if i not in L:
+        L.append(i)
+    else:
+        a+=1
+print(f"Size of {L[0]} : {a}")
+
+
+ 
